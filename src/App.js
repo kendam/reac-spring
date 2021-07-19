@@ -1,5 +1,6 @@
 'use strict';
-
+import logo from './logo.svg';
+import './App.css';
 const React = require('react');
 const ReactDOM = require('react-dom');
 const when = require('when');
@@ -9,7 +10,7 @@ const follow = require('./follow');
 
 const stompClient = require('./websocket-listener');
 
-const root = '/api';
+const root = 'http://localhost:8080/api';
 
 class App extends React.Component {
 
@@ -463,8 +464,11 @@ class Employee extends React.Component {
 	}
 }
 
+
 ReactDOM.render(
 	<App loggedInManager={document.getElementById('managername').innerHTML } />,
 	document.getElementById('react')
 )
+
+export default App;
 

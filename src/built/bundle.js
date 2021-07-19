@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main/js/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/App.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2360,7 +2360,7 @@ function printWarning(level, format, args) {
 
     argsWithFormat.unshift('Warning: ' + format); // We intentionally don't use spread (or .apply) directly because it
     // breaks IE9: https://github.com/facebook/react/issues/13610
-    // eslint-disable-next-line react-internal/no-production-logging
+    //// eslint-disable-next-line react-internal/no-production-logging
 
     Function.prototype.apply.call(console[level], console, argsWithFormat);
 
@@ -27267,7 +27267,7 @@ var foundDevTools = injectIntoDevTools({
       var protocol = window.location.protocol; // Don't warn in exotic cases like chrome-extension://.
 
       if (/^(https?|file):$/.test(protocol)) {
-        // eslint-disable-next-line react-internal/no-production-logging
+        //// eslint-disable-next-line react-internal/no-production-logging
         console.info('%cDownload the React DevTools ' + 'for a better development experience: ' + 'https://fb.me/react-devtools' + (protocol === 'file:' ? '\nYou might need to use a local HTTP server (instead of file://): ' + 'https://fb.me/react-devtools-faq' : ''), 'font-weight:bold');
       }
     }
@@ -27656,7 +27656,7 @@ function printWarning(level, format, args) {
 
     argsWithFormat.unshift('Warning: ' + format); // We intentionally don't use spread (or .apply) directly because it
     // breaks IE9: https://github.com/facebook/react/issues/13610
-    // eslint-disable-next-line react-internal/no-production-logging
+    //// eslint-disable-next-line react-internal/no-production-logging
 
     Function.prototype.apply.call(console[level], console, argsWithFormat);
 
@@ -41106,9 +41106,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (r
 
 /***/ }),
 
-/***/ "./src/main/js/app.js":
+/***/ "./src/App.js":
 /*!****************************!*\
-  !*** ./src/main/js/app.js ***!
+  !*** ./src/App.js ***!
   \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
